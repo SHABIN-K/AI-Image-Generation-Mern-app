@@ -6,8 +6,11 @@ import { getRandomPrompt } from "../utils";
 import { FormField, Loader } from "../components";
 
 const CreatePost = () => {
+
+  const serverURL = import.meta.env.VITE_SERVER_URL;
+  
   const navigate = useNavigate();
-  const site = "https://aiimagetooooool.onrender.com"
+
   const [form, setForm] = useState({
     name: "",
     prompt: "",
@@ -20,7 +23,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const resposne = await fetch(`${site}`+"/api/v1/dalle", {
+        const resposne = await fetch(`${serverURL}`+"/api/v1/dalle", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -44,7 +47,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch(`${site}`+"/api/v1/post", {
+        const response = await fetch(`${serverURL}`+"/api/v1/post", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
