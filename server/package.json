@@ -5,9 +5,10 @@
   "type" : "module",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index"
+    "start": "node index",
+    "test" : "nodemon index"
   },
-  "keywords": [],
+  "keywords": ["ai image generating","ai", "dalle", "openai"],
   "author": "mohammed shabin k",
   "license": "ISC",
   "dependencies": {
