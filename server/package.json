@@ -10,6 +10,9 @@
   "keywords": ["ai image generating","ai", "dalle", "openai"],
   "author": "mohammed shabin k",
   "license": "ISC",
+  "engines": {
+    "node": "14.20.1"
+  },
   "dependencies": {
     "cloudinary": "^1.35.0",
     "cors": "^2.8.5",
