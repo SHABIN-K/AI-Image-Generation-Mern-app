@@ -8,13 +8,13 @@ import { FormField, Loader } from "../components";
 const CreatePost = () => {
   const navigate = useNavigate();
 
-  const [generatingImg, setGeneratingImg] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
     prompt: "",
     photo: "",
   });
+  const [generatingImg, setGeneratingImg] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const generateImage = async () => {
     if (form.prompt) {
@@ -41,10 +41,8 @@ const CreatePost = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     if (form.prompt && form.photo) {
       setLoading(true);
-
       try {
         const response = await fetch("http://localhost:5000/api/v1/post", {
           method: "POST",
@@ -53,7 +51,6 @@ const CreatePost = () => {
           },
           body: JSON.stringify(form),
         });
-
         await response.json();
         navigate("/");
       } catch (error) {
@@ -62,19 +59,17 @@ const CreatePost = () => {
         setLoading(false);
       }
     } else {
-      alert("please enter a prompt and generate an image");
+      alert("Please generate an image with proper details");
     }
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
-  };
 
   const handleSurpriseMe = () => {
     const randomPrompt = getRandomPrompt(form.prompt);
     setForm({ ...form, prompt: randomPrompt });
   };
-
   return (
     <section className="max-w-7xl mx-auto">
       <div>
@@ -98,13 +93,14 @@ const CreatePost = () => {
           <FormField
             LabelName="Prompt"
             type="text"
-            name="name"
+            name="prompt"
             placeholder="A Space Shuttle flying above Cape Town, digital art"
             value={form.prompt}
             handleChange={handleChange}
             isSurpriseMe
             handleSurpriseMe={handleSurpriseMe}
           />
+
           <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-3 h-64 flex justify-center items-center">
             {form.photo ? (
               <img
