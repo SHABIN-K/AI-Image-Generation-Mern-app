@@ -33,7 +33,11 @@ const Home = () => {
           setAllPosts(result.data.reverse());
         }
       } catch (error) {
-        alert(error);
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong! \n\n ERROR :" + error,
+        });
       } finally {
         setLoading(false);
       }

@@ -32,12 +32,20 @@ const CreatePost = () => {
         const data = await resposne.json();
         setForm({ ...form, photo: `data:image/jpeg;base64,${data.photo}` });
       } catch (error) {
-        alert(error);
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong! \n\n ERROR :" + error,
+        });
       } finally {
         setGeneratingImg(false);
       }
     } else {
-      alert("please enter the prompt");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "please enter the prompt",
+      });
     }
   };
 
@@ -56,12 +64,20 @@ const CreatePost = () => {
         await response.json();
         navigate("/");
       } catch (error) {
-        alert(error);
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong! \n\n ERROR :" + error,
+        });
       } finally {
         setLoading(false);
       }
     } else {
-      alert("Please generate an image with proper details");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please generate an image with proper details",
+      });
     }
   };
 
