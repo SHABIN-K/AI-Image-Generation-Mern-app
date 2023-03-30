@@ -14,11 +14,9 @@ Full Stack MERN AI Image Generation App MidJourney & DALL E Clone
 
 ## Features
 
-- Light/dark mode toggle
 - Live previews
 - Fullscreen mode
 - Cross platform
-
 
 ## Environment Variables
 
