@@ -12,7 +12,7 @@ Full Stack MERN AI Image Generation App MidJourney & DALL E Clone
 **Server:** Node, Express, Cloudinary, Mongodb, Openai
 
 
-## Screenshots
+## Screenshot
 ![Web capture_29-3-2023_201651_localhost](https://user-images.githubusercontent.com/73272797/228886759-cccffce7-3160-4abc-8086-cea40334612a.jpeg)
 
 ## Environment Variables
