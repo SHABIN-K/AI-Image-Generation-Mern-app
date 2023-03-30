@@ -34,13 +34,13 @@ To run this project, you will need to add the following environment variables to
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/SHABIN-K/AI-Image-Generation-app.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd client
 ```
 
 Install dependencies
@@ -52,7 +52,7 @@ Install dependencies
 Start the server
 
 ```bash
-  npm run start
+  npm run dev
 ```
 
 
