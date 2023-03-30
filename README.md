@@ -36,30 +36,21 @@ To run this project, you will need to add the following environment variables to
 
 ## Run Locally
 
-Clone the project
-
-```bash
-  git clone https://github.com/SHABIN-K/AI-Image-Generation-app.git
-```
-
-Go to the project directory
-
-```bash
-  cd client
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run dev
-```
-
+**Client:**
+````bash
+git clone https://github.com/SHABIN-K/AI-Image-Generation-app.git
+cd client
+npm install
+# <Create .env appropriately>
+npm run dev
+````
+**Server:**
+````bash
+cd server
+npm install
+# <Create .env appropriately>
+npm start
+````
 
 ## Support   
 Join Our [Telegram Group](https://www.telegram.dog/codexbotzsupport) For Support/Assistance And Our [Channel](https://www.telegram.dog/codexbotz) For Updates.   
