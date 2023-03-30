@@ -57,7 +57,11 @@ Start the server
 ```
 
 
-## Support
+## Support   
+Join Our [Telegram Group](https://www.telegram.dog/codexbotzsupport) For Support/Assistance And Our [Channel](https://www.telegram.dog/codexbotz) For Updates.   
+   
+Report Bugs, Give Feature Requests There..   
 
-For support, email fake@fake.com or join our Slack channel.
+##
 
+   **Star this Repo if you Liked it ⭐⭐⭐**
