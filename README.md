@@ -25,15 +25,14 @@ Full Stack MERN AI Image Generation App MidJourney & DALL E Clone
 To run this project, you will need to add the following environment variables to your .env file
 
 **Client:**
-* `VITE_SERVER_URL` your backend url eg:https://server.com
+* `VITE_SERVER_URL` your backend url
 
 **Server:**
 * `MONGODB_URL` Your mongo db url
-* `OPENAI_API_KEY` your OPENAI_API_KEY  https://platform.openai.com/account/api-keys
-* `CLOUDINARY_CLOUD_NAME` your cloudinary name from https://console.cloudinary.com/invites/lpov9zyyucivvxsnalc5/tzdgh84nio714m556dlf?t=default
-* `CLOUDINARY_API_KEY` your cloudinary api key from  https://console.cloudinary.com/invites/lpov9zyyucivvxsnalc5/tzdgh84nio714m556dlf?t=default
-* `CLOUDINARY_API_SECRET` your cloudinary api api secret from https://console.cloudinary.com/invites/lpov9zyyucivvxsnalc5/tzdgh84nio714m556dlf?t=default
-
+* `OPENAI_API_KEY` your OPENAI_API_KEY 
+* `CLOUDINARY_CLOUD_NAME` your cloudinary name
+* `CLOUDINARY_API_KEY` your cloudinary api key 
+* `CLOUDINARY_API_SECRET` your cloudinary api api secret 
 
 ## Run Locally
 
