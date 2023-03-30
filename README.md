@@ -34,9 +34,13 @@ To run this project, you will need to add the following environment variables to
 
 ## Run Locally
 
+Clone the project
+
+```bash
+  git clone https://github.com/SHABIN-K/AI-Image-Generation-app.git
+```
 **Client:**
 ````bash
-git clone https://github.com/SHABIN-K/AI-Image-Generation-app.git
 cd client
 npm install
 # <Create .env appropriately>
