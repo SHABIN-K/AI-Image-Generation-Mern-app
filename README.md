@@ -5,12 +5,11 @@ Full Stack MERN AI Image Generation App MidJourney & DALL E Clone
 
 
 
-
 ## Tech Stack
 
-**Client:** React, Redux, TailwindCSS
+**Client:** React, Sweetalert2, TailwindCSS, Vite
 
-**Server:** Node, Express
+**Server:** Node, Express, Cloudinary, Mongodb, Openai
 
 
 ## Features
