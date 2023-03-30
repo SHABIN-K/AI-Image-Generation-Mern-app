@@ -11,13 +11,6 @@ Full Stack MERN AI Image Generation App MidJourney & DALL E Clone
 
 **Server:** Node, Express, Cloudinary, Mongodb, Openai
 
-
-## Features
-
-- Live previews
-- Fullscreen mode
-- Cross platform
-
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
